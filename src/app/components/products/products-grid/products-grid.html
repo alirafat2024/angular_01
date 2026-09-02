@@ -1,3 +1,10 @@
 <div class="products-container">
-    <app-porducts-card/>
+   <p>Total Products: {{ products().length }}</p>
+
+   <div class="products-grid">
+      <app-porducts-card *ngFor="let product of products()" [product]="product">
+        
+      </app-porducts-card>
+
+   </div>
 </div>

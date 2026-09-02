@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { Product } from '../product';
@@ -8,4 +8,8 @@ import { Product } from '../product';
   styleUrl: './porducts-card.css',
   templateUrl: './porducts-card.html',
 })
-export class PorductsCard {}
+export class PorductsCard {
+ readonly product = input.required<Product>();
+
+
+}
