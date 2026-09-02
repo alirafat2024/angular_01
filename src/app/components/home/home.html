@@ -1,4 +1,4 @@
-<p>{{ appName }}</p>
+<!-- <p>{{ appName }}</p>
 
 <img [src]="imgUrl" alt="My image" width="200" height="200">
 
@@ -14,4 +14,11 @@
   <input type="text" [(ngModel)]="username" class="border-2 rounded-sm p-2" placeholder="Enter your username" />
 
   <p>Your username: {{ username }}</p>
-</div>
+</div> -->
+<button (click)="count.update(c => c + 1 )" class="border-2 rounded-sm p-2">
+  Increment Count
+</button>
+<!-- <button (click)="count.set(5)">click me</button> -->
+
+<p >count: {{ count() }}</p>
+<p >double count: {{ doubleCount() }}</p>

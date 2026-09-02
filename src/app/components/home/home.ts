@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-home',
@@ -9,13 +10,20 @@ import { FormsModule } from '@angular/forms';
 })
 export class Home {
 
-  appName = 'Hi how are mohammade ali rafat jan';
+  // appName = 'Hi how are mohammade ali rafat jan';
 
-  imgUrl = 'https://us.images.westend61.de/0000884593f/close-up-of-woman-holding-camera-CAVF27057.jpg';
+  // imgUrl = 'https://us.images.westend61.de/0000884593f/close-up-of-woman-holding-camera-CAVF27057.jpg';
 
-  username:string = 'Ali Rafat';
+  // username:string = 'Ali Rafat';
 
-  showMessage() {
-    alert('clicked me ..................');
-  }
+  // showMessage() {
+  //   alert('clicked me ..................');
+  // }
+
+protected count=signal(0);
+
+protected doubleCount=computed(()=>this.count()*2);
+
+
 }
+  
