@@ -1,0 +1,17 @@
+<p>{{ appName }}</p>
+
+<img [src]="imgUrl" alt="My image" width="200" height="200">
+
+<p>{{ appName }}</p>
+
+<button (click)="showMessage()" class="border-2 rounded-sm p-2">
+  Click me
+</button>
+
+<div>
+  <p >two way binding</p>
+
+  <input type="text" [(ngModel)]="username" class="border-2 rounded-sm p-2" placeholder="Enter your username" />
+
+  <p>Your username: {{ username }}</p>
+</div>
