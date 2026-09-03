@@ -10,6 +10,6 @@ import { Product } from '../product';
 })
 export class PorductsCard {
  readonly product = input.required<Product>();
-
+ readonly name = input.required<string>();
 
 }
